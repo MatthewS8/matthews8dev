@@ -1,19 +1,18 @@
-<div class="row background">
-    <div class="col">
-        <div class="row">
-            <div class="col-4">
-                @defer {
-                    <img src="./assets/myPhoto.png">
-                } @loading {
-                    <mat-spinner></mat-spinner>
-                }
-            </div>
-            <div class="col">
-                <p>
-                    Hi, my name is Matteo Stefanelli, I'm a Software Engineer.
-                    I really love Android programming and the Kotlin programming language.
-                </p>
-            </div>
-        </div>
+<div class="py-8 px-8 max-w-sm mx-auto bg-purple-600 rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+    @defer {
+        <img class="block mx-auto min-h-24 rounded-full sm:mx-0 sm:shrink-0" src="./assets/myPhoto.png" alt="my photo">
+    } @loading {
+        <mat-spinner></mat-spinner>
+    }
+    <div class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
+      <div class="space-y-0.5">
+        <p class="text-lg text-black font-semibold">
+          Matteo Stefanelli
+        </p>
+        <p class="text-slate-500 font-medium">
+            Hi, my name is Matteo Stefanelli, I'm a Software Engineer.
+            I really love Android programming and the Kotlin programming language.
+        </p>
+      </div>
     </div>
-</div>
+  </div>
