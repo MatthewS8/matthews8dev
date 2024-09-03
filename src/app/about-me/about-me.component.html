@@ -1,18 +1,19 @@
-<div class="py-8 px-8 max-w-sm mx-auto bg-purple-600 rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="flex flex-row max-h-screen auto-rows-auto grid-cols-4">
     @defer {
-        <img class="block mx-auto min-h-24 rounded-full sm:mx-0 sm:shrink-0" src="./assets/myPhoto.png" alt="my photo">
+        <img class="block mx-auto min-h-9 max-h-screen shadow-md  rounded-lg my-3" src="./assets/myPhoto.jpg" alt="my photo">
     } @loading {
-        <mat-spinner></mat-spinner>
+      <mat-spinner></mat-spinner>
     }
-    <div class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
+    <div class="selection:bg-fuchsia-300 selection:text-fuchsia-900 my-auto mx-auto">
       <div class="space-y-0.5">
-        <p class="text-lg text-black font-semibold">
+        <p class="text-lg text-white font-semibold">
           Matteo Stefanelli
         </p>
-        <p class="text-slate-500 font-medium">
+        <p class="text-slate-500 font-medium font-mono">
             Hi, my name is Matteo Stefanelli, I'm a Software Engineer.
             I really love Android programming and the Kotlin programming language.
         </p>
       </div>
     </div>
-  </div>
+</div>
